@@ -5,12 +5,12 @@
 <body>
 <h1>NLTK 3.0 Alpha Releases</h1>
 
-<p><i>NLTK 3.0 is the first version of NLTK to support Python 3.
-This page contains links to the most recent alpha release.</i></p>
-
-<p>Python 3 support is a work in progress, led by Mikhail Korobov, and with support from the Python Software Foundation.
-The alpha releases are only intended for people who want to support the development effort by testing releases and by submitting bug reports and patches on <a href="https://github.com/nltk/nltk/">GitHub</a>.
-We will acknowledge such support in our final release announcement.</p>
+<p>NLTK 3.0 is the first version of NLTK to support Python 3.
+<b>This version of NLTK is likely to contain bugs.</b>
+The alpha releases are for people who would like to help us identify and fix them
+(by submitting bug reports and patches on <a href="https://github.com/nltk/nltk/">GitHub</a>).
+All contributions will be acknowledged.
+</p>
 
 <ul>
   <li><a href="nltk-3.0a0.tar.gz">nltk-3.0a0.tar.gz</a></li>
@@ -18,27 +18,28 @@ We will acknowledge such support in our final release announcement.</p>
   <li><a href="nltk-3.0a0.zip">nltk-3.0a0.zip</a></li>
 </ul>
 
+<p>This work is being led by Mikhail Korobov, supported by the Python Software Foundation.</p>
+
 <h2>Release Notes</h2>
 
 <p>The NLTK 3.0.X series will support Python 2.6 and 2.7 as well as Python 3.</p>
 
-<p>The most significant API changes are as follows:
-corpus readers now return Unicode strings by default; <b>[MORE]</b>.
-The following are dropped: Tkinter graphical interfaces; babelize; sourcedstrings; <b>[MORE]</b>
+<p>The most observable change to the API is that Unicode strings are now used throughout.
+The following are dropped: Tkinter graphical interfaces; babelize; sourcedstrings;
+interface to scipy's deprecated maximum entropy classifier. (Note that Tkinter is not
+supported because there are incompatible changes between Python 2 and 3 Tkinter libraries.)
+
+<p>Most of the effort has gone into implementing the syntactic changes required for Python 3
+and improving our test suite. The latter will make it easier to maintain NLTK into the future.
 </p>
-
-<p>The NLTK API documentation has been updated for this release.
-The online book will be updated during the first quarter of 2013.</p>
-
-<b>(have our docstring changes shown up on the website yet?)</b>
 
 <h2>Useful Links</h2>
 
 <ul>
-<li><a href="http://docs.python.org/3.0/whatsnew/3.0.html">What's new in Python 3.0</a></li>
-<li><a href="http://docs.python.org/2/library/2to3.html">Automated Python 2 to 3 code translation</a></li>
-<li><a href="http://nltk.org/api/nltk.html">NLTK's API documentation</a></li>
-<li><a href="https://github.com/nltk/nltk/wiki/API-changes-for-Python-3">changes to the NLTK API (some still under consideration)</a></li>
+  <li><a href="http://docs.python.org/3.0/whatsnew/3.0.html">What's new in Python 3.0</a></li>
+  <li><a href="http://docs.python.org/2/library/2to3.html">Automated Python 2 to 3 code translation</a></li>
+  <li><a href="https://github.com/nltk/nltk/wiki/API-changes-for-Python-3">changes to the NLTK API (some still under consideration)</a></li>
+  <li><a href="https://github.com/nltk/nltk/">NLTK development on GitHub</a></li>
 </ul>
 
 </body>
